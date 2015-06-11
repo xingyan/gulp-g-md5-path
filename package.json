@@ -1,0 +1,26 @@
+{
+  "name": "gulp-md5-path",
+  "version": "0.0.0",
+  "description": "change file's name as md5 of it's path",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "^0.6.5",
+    "gulp-util": "^3.0.5",
+    "md5-image-path": "^0.0.1",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xingyan/gulp-g-md5-path.git"
+  },
+  "author": "xingyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xingyan/gulp-g-md5-path/issues"
+  },
+  "homepage": "https://github.com/xingyan/gulp-g-md5-path"
+}
