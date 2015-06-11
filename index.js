@@ -27,6 +27,6 @@ module.exports = function() {
 
     this.push(file);
 
-    cb();
+    cb(null, file);
   });
 }

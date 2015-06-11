@@ -1,6 +1,6 @@
 {
   "name": "gulp-md5-path",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "change file's name as md5 of it's path",
   "main": "index.js",
   "dependencies": {
