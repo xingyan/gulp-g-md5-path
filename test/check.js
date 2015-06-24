@@ -1,8 +1,8 @@
 var through = require('through2'),
   gutil = require('gulp-util'),
   path = require('path'),
-  md5Path = require('md5-image-path');
-
+  md5Path = require('md5-image-path'),
+  chalk = require('chalk');
 
 module.exports = function() {
 
@@ -17,14 +17,7 @@ module.exports = function() {
       return cb();
     }
 
-    var dirName = path.dirname(file.path),
-      extName = path.extname(file.path),
-      output = md5Path({
-        files: file.path
-      });
-
-    file.oldPath = file.path;
-    file.path = (output && output[0] && output[0].md5) ? path.join(dirName, output[0].md5 + extName) : file.path;
+    console.log(file.oldPath+"  ==>  "+chalk.underline.gray(file.path));
 
     this.push(file);
 
