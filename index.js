@@ -23,8 +23,10 @@ module.exports = function(opts) {
         files: filePath
       });
 
+    file.oldPath = file.path;
     file.path = (output && output[0] && output[0].md5) ? path.join(dirName, output[0].md5 + extName) : file.path;
 
     cb(null, file);
+    
   });
 }
